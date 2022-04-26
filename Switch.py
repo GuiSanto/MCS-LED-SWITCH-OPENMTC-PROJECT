@@ -8,7 +8,7 @@ def select_led():
   button1['text'] = 'LED 1'
 
 
-def select_state():
+def change_state():
  #check the state of the led and reverse it
  print("!state")
 	
@@ -27,11 +27,13 @@ button1=Button(window, fg = 'black', text = "LED 1", font = f, command = select_
 button1.place(x=100, y=200)
 
 #button to turn ON or OFF
-button2=Button(window, fg = 'black', font = f, command = select_state, height = 9, width= 23)
+button2=Button(window, fg = 'black', font = f, command = change_state, height = 9, width= 23)
 button2.place(x=950, y=200)
 
 window.title('Virtual Switch')
+#put the resolution of YOUR PC
 window.geometry("1920x1080")
+
 
 window.mainloop()
 
