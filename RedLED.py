@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 from tkinter import *
+import requests
  
 #Set display sizes
 WINDOW_W = 1920
