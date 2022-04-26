@@ -9,10 +9,8 @@ def select_led():
 
 
 def select_state():
- if(button2['text'] == 'ON'):
-  button2['text'] = 'OFF'
- else:
-  button2['text'] = 'ON'
+ #check the state of the led and reverse it
+ print("!state")
 	
 	
 window=Tk()
@@ -29,10 +27,11 @@ button1=Button(window, fg = 'black', text = "LED 1", font = f, command = select_
 button1.place(x=100, y=200)
 
 #button to turn ON or OFF
-button2=Button(window, fg = 'black', text = "OFF", font = f, command = select_state, height = 9, width= 23)
+button2=Button(window, fg = 'black', font = f, command = select_state, height = 9, width= 23)
 button2.place(x=950, y=200)
 
 window.title('Virtual Switch')
 window.geometry("1920x1080")
 
 window.mainloop()
+
